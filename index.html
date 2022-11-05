@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="funcs.js"></script>
+</head>
+<body> 
+    <div class="header">
+        <div class="headerP" >
+            Парадокс Монти-Холла
+        </div>
+    </div>
+
+    <div class="restart no-user-select">
+        <button id="restart_btn" class="restart_btn" onclick="Restart()">Играть снова?</button>
+    </div>
+    <div class="count_game">
+        <p id="count_game_p">0</p>
+    </div>
+
+
+    <div class="doors">
+        <img id="0" class="door" src="door.png" onclick='Clickdoor(id);'>
+        <img id="1" class="door" src="door.png" onclick='Clickdoor(id);'>
+        <img id="2" class="door" src="door.png" onclick='Clickdoor(id);'>
+    </div>
+
+    <div class="info no-user-select">  
+        <div class="changed_door">
+            <p class="text_info">Дверь поменялась:</p>
+            <p id="no_change_tot_num" class="text_info">0</p>
+            <p id="no_change_count_win" class="text_info win_count">0</p>
+            <p id="no_change_count_loos" class="text_info loos_count">0</p>
+        </div>
+        <div class="no_changed_door">
+            <p class="text_info">Дверь не поменялась:</p>
+            <p id="change_tot_num" class="text_info">0</p>
+            <p id="change_count_win" class="text_info win_count">0</p>
+            <p id="change_count_loos" class="text_info loos_count">0</p>
+        </div>
+    </div>
+</body>
+</html>     
